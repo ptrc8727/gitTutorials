@@ -7,7 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2><b>today is</b></h2>
-<% out.print("Today is:"+java.util.Calendar.getInstance().getTime()); %>  
+
+	<jsp:useBean id="hob" class="second.Hobby" />
+	
+    <jsp:setProperty property="*" name="hob" />
+    
+    <jsp:forward page="ex_4_out.jsp" />
+
 </body>
 </html>
